@@ -11,6 +11,10 @@
             font-size: 25px;
             line-height: 40px;
         } */
+        .materialbox-caption {
+            font-size: 30px;
+            color: blueviolet;
+        }
      </style>
 </head>
 <body>
@@ -40,7 +44,7 @@
 
             </div>
             <div class="col s12 l4 hide-on-small-only">
-                <img src="img/porsche_taycan_2024.jpg" alt=""  class="responsive-img" >
+                <img src="img/porsche_taycan_2024.jpg" alt=""  class="responsive-img materialboxed" >
             </div>
             <div class="col s12 l4 hide-on-med-only">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam adipisci aliquid voluptates consectetur reprehenderit minus aperiam, maiores repellat minima provident porro, eum eveniet tempore? Minima aliquid ullam tenetur veniam est accusamus esse explicabo similique repellendus iure vel, quasi necessitatibus debitis iste maxime soluta sapiente et consequuntur suscipit? Maiores, debitis ducimus corporis quos assumenda laborum totam distinctio aspernatur animi in.</p>
@@ -54,7 +58,7 @@
             <div class="col s12 m6 l4">
                 <div class="card z-depth-1-half">
                     <div class="card-image">
-                        <img src="img/aston_martin_vantage.jpg" alt="" class="responsive-img">
+                        <img src="img/aston_martin_vantage.jpg" alt="" class="responsive-img materialboxed">
                     </div>
                     <div class="card-content">
                         <h4 class="green-text darken-4 text-darken-4">Aston Martin Vantage</h4>
@@ -70,7 +74,7 @@
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/cadillac_ct5_v.jpg" alt="" class="responsive-img">
+                        <img src="img/cadillac_ct5_v.jpg" alt="" class="responsive-img materialboxed">
                     </div>
                     <div class="card-content">
                         <h4 class="green-text darken-4 text-darken-4">Cadillac CT5 V</h4>
@@ -86,7 +90,7 @@
             <div class="col s12 m6 l4">
                 <div class="card green lighten-5">
                     <div class="card-image">
-                        <img src="img/light_blue_bentley.jpg" alt="" class="responsive-img">
+                        <img src="img/light_blue_bentley.jpg" alt="" class="responsive-img materialboxed" data-caption="Light blue Bentley">
                         <a class="btn-floating halfway-fab red darken-4" href="">
                             <i class="material-icons">favorite</i>
                         </a>
@@ -98,11 +102,12 @@
                     </div>
                     <div class="card-action">
                         <div class="row">
-                            <div class="col s6"><a  class="green-text darken-4 text-darken-4"href="">
+                            <div class="col s3"><a  class="green-text darken-4 text-darken-4"href="">
                                 <i class="material-icons medium">add_shopping_cart</i>
                                 </a>
                             </div>
-                            <div class="col s6"><a  class="green-text darken-4 text-darken-4"href="">
+                            <div class="col s6"></div>
+                            <div class="col s3"><a  class="green-text darken-4 text-darken-4"href="">
                                 <i class="material-icons medium">expand_more</i>
                                 </a>
                             </div>
@@ -117,7 +122,7 @@
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
-            
+         $('.materialboxed').materialbox();   
         });
 
 
