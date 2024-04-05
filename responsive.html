@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="CSS/materialize.css">
 </head>
 <body>
+    <!-- slider -->
+    <div class="container">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/porsche_taycan_2024.jpg" alt="" class="responsive-img">
+                    <div class="caption left-align">
+                        <h4>Porsche Taycan</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/mazda_cx_70_e.jpg" alt="" class="responsive-img">
+                    <div class="caption right-align">
+                        <h4>Mazda CX 70</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/cadillac_ct5_v.jpg" alt="" class="responsive-img">
+                    <div class="caption left-align">
+                        <h4>Cadillac CT5</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/light_blue_bentley.jpg" alt="" class="responsive-img">
+                    <div class="caption center-align">
+                        <h4>Bentley</h4>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/aston_martin_vantage.jpg" alt="" class="responsive-img">
+                    <div class="caption right-align">
+                        <!-- <h4 class="blue">Aston Martin Vantage</h4> -->
+                        <span class="red">Aston Martin Vantage</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
         <h1>Hello World</h1>
         <div class="row">
@@ -85,5 +124,21 @@
         </div>
     </div>
 
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+         $('.slider').slider({
+            // indicators:false,
+            // height:500
+            duration:1000,
+            interval:1000
+
+         });  
+         
+        });
+
+    </script>
 </body>
 </html>
