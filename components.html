@@ -20,12 +20,18 @@
 <!-- Collections -->
 <body>
     <header>
+         <!-- navbar -->
         <nav class="indigo darken-3">
             <div class="container">
                 <a href="" class="brand-logo">
                     <img src="img/aston_martin_vantage.jpg" width="8%" alt="">
                 </a>
-                <ul class="right">
+                <a href="#mobile" class="sidenav-trigger right" >
+                    <i class="material-icons">menu</i>
+                </a>
+                
+                <!-- desktop-trigger -->
+                <ul class="right hide-on-med-and-down">
                     <li>
                         <a href="">Home</a>
                     </li>
@@ -41,11 +47,27 @@
                 </ul>
             </div>
         </nav>
+        <!-- sidenav-trigger -->
+        <ul class="sidenav pink lighten-5" id="mobile">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
     </header>
     <main>
         <div class="container">
             <h1 style="margin-top: 100px !important; " class="purple-text text-darken-4">Collections</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sit aliquid ab dignissimos culpa voluptates adipisci, soluta dolor, unde minima nemo molestias placeat libero itaque nobis! Velit qui suscipit tempora quasi. Doloremque omnis velit nostrum recusandae unde ut numquam voluptatem possimus laborum distinctio sed consectetur vitae id eos fugiat repudiandae, quasi officia repellat quae necessitatibus. Neque animi alias officia voluptatum magnam, deleniti ipsa odit inventore accusantium aperiam corporis recusandae nisi id natus delectus, corrupti odio architecto laborum quos tenetur? Voluptates consequuntur omnis eligendi aperiam, optio perspiciatis delectus aliquid porro debitis, vel ipsa exercitationem necessitatibus. Quidem non, ipsa eligendi, adipisci neque reprehenderit accusantium quas aliquam consectetur veniam eveniet ab blanditiis minus impedit ullam laudantium sint commodi, ratione voluptas quaerat quae et. Non delectus expedita dolorum cumque reprehenderit, iure illo consequatur, sapiente commodi asperiores nostrum qui praesentium quibusdam voluptatem vitae aliquam deserunt beatae repudiandae sunt iste tempore unde vero architecto aut. Dignissimos voluptatibus tenetur perspiciatis quibusdam beatae, aperiam voluptates repellat unde consectetur suscipit adipisci nostrum ipsa eveniet dicta quasi laborum! Architecto dolor perferendis doloremque. Soluta iusto rerum odit ea laboriosam, omnis eos magni deserunt ipsum voluptate, nulla dolorem nobis sapiente? Neque molestias molestiae dolorum mollitia sint saepe. Excepturi, dolorem. Cum, ipsam nesciunt!</p>
+            <!-- collections -->
             <ul class="collection">
                 <li class="collection-item avatar">
                     <img src="img/mazda_cx_70_e.jpg" class="circle"  alt="">
@@ -209,6 +231,7 @@
         $(document).ready(function(){
          $('.modal').modal();  
          $('.collapsible').collapsible();  
+         $('.sidenav').sidenav();  
 
         });
 
