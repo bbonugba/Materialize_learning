@@ -16,6 +16,7 @@
             <br>
             <br>
             <br>
+            <h6>Text Input</h6>
             <div class="row">
                 <div class="col s12 l3">
                     <div class="input-field">
@@ -42,6 +43,7 @@
                 </div>              
             </div>
             <div class="row">
+                <h6>Adding Icons</h6>
                 <div class="col s12 l6">
                     <div class="input-field">
                         <i class="material-icons prefix">person_pin</i>
@@ -67,6 +69,25 @@
                 </div>
             </div>
         </div>
+        </div>  
+        <div class="container">
+            <h6>Pickers</h6>
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" name="" id="" class="datepicker" placeholder="Date of Birth">
+                        <!-- <input type="text" name="" id="" class="datepicker" placeholder="date-of-birth" > -->
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <div class="input-field">
+                        <i class="material-icons prefix">access_time</i>
+                        <input type="text" name="" id="" class="timepicker" placeholder="Time">
+                    </div>
+                </div>
+            </div>
+        </div>  
     </main>
     <footer></footer>
 
@@ -76,9 +97,14 @@
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
-         $('.modal').modal();  
-         $('.collapsible').collapsible();  
-         $('.sidenav').sidenav();  
+            $('.datepicker').datepicker({
+                yearRange:50,
+                disableWeekends:true
+            });
+            $('.timepicker').timepicker();
+        //  $('.modal').modal();  
+        //  $('.collapsible').collapsible();  
+        //  $('.sidenav').sidenav();  
 
         });
 
