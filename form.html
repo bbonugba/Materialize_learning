@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms via M-CSS</title>
+    <link rel="stylesheet" href="CSS/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <h1>Forms</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione rerum animi nostrum consectetur pariatur eligendi quas magnam, fugiat labore? Enim suscipit debitis eveniet qui. Earum aliquam corrupti illo amet? Minus dicta, cum expedita molestias in, exercitationem placeat inventore facere qui ratione ipsa at asperiores eius ipsam reiciendis deleniti quos?</p>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col s12 l3">
+                    <div class="input-field">
+                        <input type="text" name="" id="first_name" placeholder="e.g. your_name">
+                        <label for="first_name">First Name</label>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="input-field">
+                        <input type="text" name="" id="last_name">
+                        <label for="Last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                    <div class="input-field">
+                        <input type="email" name="" id="email" placeholder="">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="col s12 l3">
+                  <div class="input-field">
+                    <input type="password" name="" id="password" disabled>
+                    <label for="password">Password</label>
+                </div>              
+            </div>
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="input-field">
+                        <i class="material-icons prefix">person_pin</i>
+                        <input type="text" name="" id="username">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                    <input type="password" name="" id="password_2">
+                    <label for="password_2">Password</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea name="" id="about" cols="30" rows="10" class="materialize-textarea" ></textarea>
+                        <label for="about">About Yourself</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+         $('.modal').modal();  
+         $('.collapsible').collapsible();  
+         $('.sidenav').sidenav();  
+
+        });
+
+    </script>
+</body>
+</html>
